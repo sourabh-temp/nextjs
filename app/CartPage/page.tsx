@@ -25,7 +25,7 @@ const Page = () => {
     },
   ]);
 
-  const handleRemoveItem = (id) => {
+  const handleRemoveItem = (id: React.ChangeEvent<HTMLSelectElement>) => {
     setCartItems(cartItems.filter(item => item.id !== id));
   };
 
