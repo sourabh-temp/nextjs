@@ -214,7 +214,7 @@ const AllProduct = () => {
     (filters.brand ? product.brand.toLowerCase().includes(filters.brand.toLowerCase()) : true)
   ).length;
 
-  const handleFilterChange = (e) => {
+  const handleFilterChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const { name, value } = e.target;
     setFilters((prevFilters) => ({ ...prevFilters, [name]: value }));
   };
