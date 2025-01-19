@@ -1,0 +1,258 @@
+/* all-Product List */
+.all-product-list {
+  margin: 30px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Header */
+h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+/* Filter Section */
+.filter-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 20px;
+  margin-bottom: 30px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.filter-section select, .filter-section input {
+  padding: 10px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  width: 220px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  transition: all 0.3s ease;
+}
+
+.filter-section select:hover, .filter-section input:hover {
+  border-color: #3498db;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+.filter-section select:focus, .filter-section input:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+/* Price Filter */
+.price-filter {
+  /*cursor: pointer;*/
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 10px;
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.price-filter:hover {
+  background-color: #e0e0e0;
+}
+
+.price-range {
+  margin-top: 10px;
+}
+
+.price-range input {
+  width: 100px;
+  margin-right: 15px;
+  border-radius: 5px;
+  padding: 6px;
+  border: 1px solid #ddd;
+  transition: all 0.3s ease;
+}
+
+.price-range input:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+/* Remove Filters Button */
+.remove-filters {
+  padding: 10px 20px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.remove-filters:hover {
+  background-color: #c0392b;
+}
+
+/* all-Product Grid */
+.all-product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1200px) {
+  .all-product-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .all-product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .all-product-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* all-Product Card */
+.all-product-card {
+  cursor: pointer;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.all-product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.all-product-image-wrapper {
+  position: relative;
+}
+
+.all-product-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-bottom: 5px solid #ddd;
+  transition: all 0.3s ease;
+}
+
+.all-product-image-wrapper:hover .all-product-image {
+  transform: scale(1.05);
+}
+
+.in-stock {
+  background-color: #27ae60;
+}
+
+.out-of-stock {
+  background-color: #e74c3c;
+}
+
+.all-product-details {
+  padding: 15px;
+  text-align: center;
+}
+
+.all-product-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.all-product-description {
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.all-product-price {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #3498db;
+  margin-top: 10px;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.pagination button {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.pagination button:hover {
+  background-color: #2980b9;
+}
+
+.pagination button:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+
+
+/* Ensure filter section stays responsive */
+.filter-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+.price-filter {
+  cursor: pointer;
+  position: relative;
+}
+
+.price-range {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: absolute;
+  top: 100%;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 200px;
+  z-index: 10;
+}
+
+@media (max-width: 768px) {
+  .filter-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .price-filter {
+    width: 100%;
+  }
+}

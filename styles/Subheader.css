@@ -1,0 +1,29 @@
+.subheader-container {
+  width: 100%; /* Make sure it takes the full width of the screen */
+  overflow: hidden; /* Hide the text that goes beyond the container */
+  background-color: #333; /* Choose any background color */
+  padding: 10px 0; /* Add some padding */
+  position: relative; /* For positioning the text within the container */
+}
+
+.subheader-text {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee 15s linear infinite; /* Apply the animation to the text */
+}
+
+.subheader-text span {
+  display: inline-block;
+  padding-right: 50px; /* Add space between repeated text */
+  color: white; /* Text color */
+  font-size: 18px; /* Font size */
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0); /* Start offscreen from the right */
+  }
+  100% {
+    transform: translateX(-100%); /* End offscreen to the left */
+  }
+}

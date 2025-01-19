@@ -1,0 +1,35 @@
+.sub-footer {
+  background-color: #fff;
+  padding: 5px 0;
+  /*box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);*/
+  font-family: Arial, sans-serif;
+}
+
+.brands-marquee {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.brands-container {
+  display: flex;
+  animation: slideBrands 20s linear infinite;
+}
+
+.brand-logo {
+  margin: 0 20px;
+  max-width: 150px;
+  max-height: 50px;
+  object-fit: contain;
+}
+
+/* Animation for sliding */
+@keyframes slideBrands {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
