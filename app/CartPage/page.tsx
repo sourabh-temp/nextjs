@@ -14,14 +14,14 @@ const Page = () => {
       name: 'Protein Powder',
       price: 29.99,
       quantity: 2,
-      image: 'https://via.placeholder.com/150',
+      image: '/logo.webp',
     },
     {
       id: 2,
       name: 'Vitamins Pack',
       price: 19.99,
       quantity: 1,
-      image: 'https://via.placeholder.com/150',
+      image: '/logo.webp',
     },
   ]);
 
@@ -49,7 +49,7 @@ const Page = () => {
               cartItems.map((item) => (
                 <div key={item.id} className="cart-item">
                   <div className="cart-item-image">
-                    <Image src={item.image} alt={item.name} />
+                    <Image src={item.image} width={300} height={200} layout="responsive" alt={item.name} />
                   </div>
                   <div className="cart-item-details">
                     <p className="cart-item-name">{item.name}</p>

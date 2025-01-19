@@ -26,9 +26,9 @@ const Page = () => {
   const product = {
     title: 'Protein',
     images: [
-      'http://hsfnutrition.in/cdn/shop/files/1_1ef33aa5-3f5e-47e4-96d2-446e23b1e9a4.png?v=1728185570',
-      'http://hsfnutrition.in/cdn/shop/files/1_1ef33aa5-3f5e-47e4-96d2-446e23b1e9a4.png?v=1728185570',
-      'http://hsfnutrition.in/cdn/shop/files/1_1ef33aa5-3f5e-47e4-96d2-446e23b1e9a4.png?v=1728185570'
+      '/logo.webp',
+      '/logo.webp',
+      '/logo.webp'
     ],
     description: 'AS-IT-IS ATOM Whey Protein - 1 kg, 27GM Protein',
     category: 'ASITIS NUTRITION',
@@ -58,11 +58,11 @@ const Page = () => {
         <div className="product-view-container">
           <div className="product-images">
             <div className="main-image">
-              <Image src={product.images[0]} alt="Main Product" width={500} height={500} />
+              <Image src={product.images[0]} width={300} height={200} layout="responsive" alt="Main Product" width={500} height={500} />
             </div>
             <div className="thumbnail-container">
               {product.images.map((image, index) => (
-                <Image src={image} alt={`Product ${index + 1}`} className="thumbnail" key={index} width={100} height={100} />
+                <Image src={image} width={300} height={200} layout="responsive" alt={`Product ${index + 1}`} className="thumbnail" key={index} width={100} height={100} />
               ))}
             </div>
           </div>

@@ -9,7 +9,7 @@ const ProductCard = () => {
   const products = [
     {
       id: 1,
-      image: 'http://hsfnutrition.in/cdn/shop/files/1_1ef33aa5-3f5e-47e4-96d2-446e23b1e9a4.png?v=1728185570',
+      image: '/logo.webp',
       title: 'Protein',
       description: 'AS-IT-IS ATOM Whey Protein - 1 kg, 27GM Protein',
       category: 'ASITIS NUTRITION',
@@ -19,7 +19,7 @@ const ProductCard = () => {
     },
     {
       id: 2,
-      image: 'http://hsfnutrition.in/cdn/shop/files/1_1ef33aa5-3f5e-47e4-96d2-446e23b1e9a4.png?v=1728185570',
+      image: '/logo.webp',
       title: 'Gainer',
       description: 'Portable bluetooth speaker with 10 hours of battery life.',
       category: 'Electronics',
@@ -29,7 +29,7 @@ const ProductCard = () => {
     },
     {
       id: 3,
-      image: 'http://hsfnutrition.in/cdn/shop/files/1_1ef33aa5-3f5e-47e4-96d2-446e23b1e9a4.png?v=1728185570',
+      image: '/logo.webp',
       title: 'Creatine',
       description: 'Fitness tracker with heart rate monitor and GPS.',
       category: 'Wearables',
@@ -39,7 +39,7 @@ const ProductCard = () => {
     },
     {
       id: 4,
-      image: 'http://hsfnutrition.in/cdn/shop/files/1_1ef33aa5-3f5e-47e4-96d2-446e23b1e9a4.png?v=1728185570',
+      image: '/logo.webp',
       title: 'Multivitamin',
       description: 'Ergonomic mouse designed for gaming with customizable DPI.',
       category: 'Accessories',
@@ -49,7 +49,7 @@ const ProductCard = () => {
     },
     {
       id: 5,
-      image: 'http://hsfnutrition.in/cdn/shop/files/1_1ef33aa5-3f5e-47e4-96d2-446e23b1e9a4.png?v=1728185570',
+      image: '/logo.webp',
       title: 'PreWorkout',
       description: 'Adjustable laptop stand for better posture and ventilation.',
       category: 'Accessories',
@@ -59,7 +59,7 @@ const ProductCard = () => {
     },
     {
       id: 6,
-      image: 'http://hsfnutrition.in/cdn/shop/files/1_1ef33aa5-3f5e-47e4-96d2-446e23b1e9a4.png?v=1728185570',
+      image: '/logo.webp',
       title: 'AminoAcid',
       description: 'Compact wireless keyboard with a long battery life.',
       category: 'Accessories',
@@ -78,7 +78,7 @@ const ProductCard = () => {
           <div key={id} className="product-card">
             <Link href={`/ProductView/${id}`} passHref>
               <div className="product-image-wrapper">
-                <Image src={image} alt={title} className="product-image" />
+                <Image src={image} alt={title} width={300} height={200} layout="responsive" className="product-image" />
                 <div className={`stock-status-badge ${inStock ? 'in-stock' : 'out-of-stock'}`}>
                   {inStock ? 'In Stock' : 'Out of Stock'}
                 </div>

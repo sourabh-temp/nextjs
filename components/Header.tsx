@@ -14,8 +14,9 @@ const Header = () => {
       <header className="header">
         <div className="header-logo">
           <Image
-            src="https://hsfnutrition.in/cdn/shop/files/358b7a219a4c0552166fde9f2d351d3d759031_bdd7429c-5458-4d4b-b0f2-12e43a08ff57.png?v=1728030313"
+            src=""
             alt="HSF Nutrition Logo"
+            
             className="logo-image"
           />
         </div>
