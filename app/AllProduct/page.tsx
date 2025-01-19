@@ -1,14 +1,13 @@
 "use client"
 import React, { useState } from 'react';
 import '@/styles/AllProduct.css';
-// import { useNavigate } from 'react-router-dom';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import SubFooter from '@/components/SubFooter'
 import Link from 'next/link';
+import Image from 'next/Image'
 
 const AllProduct = () => {
-  // const navigate = useNavigate();
   const [filters, setFilters] = useState({
     availability: '',
     minPrice: 0,
@@ -17,7 +16,6 @@ const AllProduct = () => {
   });
 
   const [page, setPage] = useState(1);
-  const [priceOpen, setPriceOpen] = useState(false); // To toggle price filter visibility
 
   const products = [
     {
@@ -208,7 +206,7 @@ const AllProduct = () => {
       (product.price >= filters.minPrice && product.price <= filters.maxPrice) &&
       (filters.brand ? product.brand.toLowerCase().includes(filters.brand.toLowerCase()) : true)
     )
-    .slice((page - 1) * 16, page * 16); // Pagination: Show 16 products per page
+    .slice((page - 1) * 16, page * 16);
 
   const totalProducts = products.filter(product =>
     (filters.availability ? product.inStock === (filters.availability === 'in-stock') : true) &&
@@ -237,10 +235,6 @@ const AllProduct = () => {
     setPage((prevPage) => prevPage - 1);
   };
 
-  const handlePriceFocus = () => {
-    setPriceOpen(true); // Open the price filter when the user focuses on the input
-  };
-
   const handlePriceBlur = (e) => {
     if (e.relatedTarget && e.relatedTarget.name !== 'minPrice' && e.relatedTarget.name !== 'maxPrice') {
       setPriceOpen(false); // Close the price filter if the user clicks outside
@@ -261,32 +255,6 @@ const AllProduct = () => {
 	          <option value="out-of-stock">Out of Stock</option>
 	        </select>
 
-	        {/* Price Filter */}
-	        {/*<div className="price-filter" onClick={() => setPriceOpen(!priceOpen)}>
-	          <span>Price</span>
-	          {priceOpen && (
-	            <div className="price-range" onBlur={handlePriceBlur} tabIndex={0}>
-	              <input
-	                type="number"
-	                name="minPrice"
-	                placeholder="Min Price"
-	                value={filters.minPrice}
-	                onChange={handleFilterChange}
-	                onFocus={handlePriceFocus}
-	              />
-	              <input
-	                type="number"
-	                name="maxPrice"
-	                placeholder="Max Price"
-	                value={filters.maxPrice}
-	                onChange={handleFilterChange}
-	                onFocus={handlePriceFocus}
-	              />
-	            </div>
-	          )}
-	        </div>*/}
-
-	        {/* Filter by brand */}
 	        <select name="brand" value={filters.brand} onChange={handleFilterChange}>
 	          <option value="">Filter by Brand</option>
 	          <option value="BrandX">BrandX</option>
@@ -295,7 +263,6 @@ const AllProduct = () => {
 	          <option value="ASITIS">ASITIS</option>
 	        </select>
 
-	        {/* Remove all filters */}
 	        <button className="remove-filters" onClick={handleRemoveFilters}>
 	          Remove Filters
 	        </button>
@@ -309,7 +276,7 @@ const AllProduct = () => {
 	            <div className="all-product-card" key={product.id} onClick={() => handleClick(product.id)}>
 	              <Link href={`/ProductView/${product.id}`}>
                   <div className="all-product-image-wrapper">
-  	                <img src={image} alt={title} className="all-product-image" />
+  	                <Image src={image} alt={title} className="all-product-image" />
   	                <div className={`stock-status-badge ${inStock ? 'in-stock' : 'out-of-stock'}`}>
   	                  {inStock ? 'In Stock' : 'Out of Stock'}
   	                </div>
@@ -329,14 +296,12 @@ const AllProduct = () => {
 	        })}
 	      </div>
 
-	      {/* Page count and total products */}
 	      <div className="pagination-info">
 	        <p>
 	          Showing {Math.min((page - 1) * 16 + 1, totalProducts)} - {Math.min(page * 16, totalProducts)} of {totalProducts} products
 	        </p>
 	      </div>
 
-	      {/* Pagination */}
 	      <div className="pagination">
 	        <button onClick={handlePrevPage} disabled={page === 1}>Previous</button>
 	        <button onClick={handleNextPage} disabled={filteredProducts.length < 16}>Next</button>
