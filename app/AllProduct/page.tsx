@@ -231,12 +231,6 @@ const AllProduct = () => {
     setPage((prevPage) => prevPage - 1);
   };
 
-  const handlePriceBlur = (e) => {
-    if (e.relatedTarget && e.relatedTarget.name !== 'minPrice' && e.relatedTarget.name !== 'maxPrice') {
-      setPriceOpen(false); // Close the price filter if the user clicks outside
-    }
-  };
-
   return (
   	<div>
   	<Header />

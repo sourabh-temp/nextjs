@@ -16,7 +16,7 @@ const Login = () => {
         <h1 className="login-title">Hold Strong Fitness & Nutrition</h1>
         <h2 className="login-subtitle">Log in</h2>
         <p className="login-description">
-          Enter your email and we'll send you a login code.
+          Enter your email and we will send you a login code.
         </p>
 
         <form onSubmit={handleSubmit} className="login-form">
