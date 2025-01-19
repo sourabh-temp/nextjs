@@ -1,10 +1,11 @@
 "use client"
 import React, { useState } from 'react';
-import '@/styles/CartPage.css'; // Include the styles for the cart page
-import { FaTrash } from 'react-icons/fa'; // Trash icon for removing items
+import '@/styles/CartPage.css';
+import { FaTrash } from 'react-icons/fa';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import SubFooter from '@/components/SubFooter'
+import Image from 'next/image';
 
 const Page = () => {
   const [cartItems, setCartItems] = useState([
@@ -29,7 +30,6 @@ const Page = () => {
   };
 
   const handleProceedToPurchase = () => {
-    // Logic to proceed to checkout (e.g., navigate to checkout page)
     alert('Proceeding to checkout');
   };
 
@@ -49,7 +49,7 @@ const Page = () => {
               cartItems.map((item) => (
                 <div key={item.id} className="cart-item">
                   <div className="cart-item-image">
-                    <img src={item.image} alt={item.name} />
+                    <Image src={item.image} alt={item.name} />
                   </div>
                   <div className="cart-item-details">
                     <p className="cart-item-name">{item.name}</p>

@@ -5,7 +5,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import SubFooter from '@/components/SubFooter'
 import Link from 'next/link';
-import Image from 'next/Image'
+import Image from 'next/image';
 
 const AllProduct = () => {
   const [filters, setFilters] = useState({
@@ -212,11 +212,7 @@ const AllProduct = () => {
     (filters.availability ? product.inStock === (filters.availability === 'in-stock') : true) &&
     (product.price >= filters.minPrice && product.price <= filters.maxPrice) &&
     (filters.brand ? product.brand.toLowerCase().includes(filters.brand.toLowerCase()) : true)
-  ).length; // Filtered total count
-
-  const handleClick = (productId) => {
-    // navigate(`/product/${productId}`);
-  };
+  ).length;
 
   const handleFilterChange = (e) => {
     const { name, value } = e.target;
@@ -273,7 +269,7 @@ const AllProduct = () => {
 	          const { image, title, description, category, price, inStock } = product;
 
 	          return (
-	            <div className="all-product-card" key={product.id} onClick={() => handleClick(product.id)}>
+	            <div className="all-product-card" key={product.id}>
 	              <Link href={`/ProductView/${product.id}`}>
                   <div className="all-product-image-wrapper">
   	                <Image src={image} alt={title} className="all-product-image" />

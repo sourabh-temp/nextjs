@@ -1,8 +1,8 @@
 "use client"
 import React, { useRef } from 'react';
 import '@/styles/ProductCategory.css';
+import Image from 'next/image';
 
-// Example category data
 const categories = [
   { id: 1, name: 'Protein', image: 'https://hsfnutrition.in/cdn/shop/files/6_2af872b5-2d8b-4bca-aa95-34acbb03dbe4.png?v=1728126234' },
   { id: 2, name: 'Gainer', image: 'https://hsfnutrition.in/cdn/shop/files/1_e537a841-e44b-49ef-9dd0-66436a2819fd.png?v=1728125313' },
@@ -24,7 +24,7 @@ const ProductCategory = () => {
       <div className="category-carousel" ref={carouselRef}>
         {categories.map((category) => (
           <div key={category.id} className="category-item">
-            <img
+            <Image
               src={category.image}
               alt={category.name}
               className="category-image"

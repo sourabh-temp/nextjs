@@ -1,8 +1,9 @@
-'use client';  // This directive marks the component as a Client Component in Next.js
+"use client"
 
 import React from 'react';
 import Link from 'next/link';
 import '@/styles/ProductCard.css';
+import Image from 'next/image';
 
 const ProductCard = () => {
   const products = [
@@ -75,10 +76,9 @@ const ProductCard = () => {
 
         return (
           <div key={id} className="product-card">
-            {/* Product Image with Stock status */}
             <Link href={`/ProductView/${id}`} passHref>
               <div className="product-image-wrapper">
-                <img src={image} alt={title} className="product-image" />
+                <Image src={image} alt={title} className="product-image" />
                 <div className={`stock-status-badge ${inStock ? 'in-stock' : 'out-of-stock'}`}>
                   {inStock ? 'In Stock' : 'Out of Stock'}
                 </div>

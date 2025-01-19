@@ -7,9 +7,7 @@ const Login = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // For now, just log the email
     console.log('Submitted email:', email);
-    // Here, you can integrate the logic to send a code to the user's email
   };
 
   return (
@@ -21,7 +19,6 @@ const Login = () => {
           Enter your email and we'll send you a login code.
         </p>
 
-        {/* Login Form */}
         <form onSubmit={handleSubmit} className="login-form">
           <div className="input-group">
             <label htmlFor="email" className="input-label">Email</label>

@@ -6,12 +6,11 @@ import Footer from '@/components/Footer';
 import SubFooter from '@/components/SubFooter'
 import ProductCard from '@/components/ProductCard';
 import ProductCategory from '@/components/ProductCategory';
-// import { useNavigate } from 'react-router-dom';
+import Image from 'next/image';
 
 const page = () => {
-	
+
   const [quantity, setQuantity] = useState(1);
-  // const navigate = useNavigate();
 
   const handleIncrease = () => {
     setQuantity(prevQuantity => prevQuantity + 1);
@@ -59,11 +58,11 @@ const page = () => {
       <div className="product-view-container">
         <div className="product-images">
           <div className="main-image">
-            <img src={product.images[0]} alt="Main Product" />
+            <Image src={product.images[0]} alt="Main Product" />
           </div>
           <div className="thumbnail-container">
             {product.images.map((image, index) => (
-              <img src={image} alt={`Product ${index + 1}`} className="thumbnail" key={index} />
+              <Image src={image} alt={`Product ${index + 1}`} className="thumbnail" key={index} />
             ))}
           </div>
         </div>

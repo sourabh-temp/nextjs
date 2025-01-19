@@ -1,6 +1,7 @@
 "use client"
 import React from 'react';
 import '@/styles/SubFooter.css';
+import Image from 'next/image';
 
 const SubFooter = () => {
   const brands = [
@@ -26,7 +27,7 @@ const SubFooter = () => {
       <div className="brands-marquee">
         <div className="brands-container">
           {brands.map((brand, index) => (
-            <img key={index} src={brand} alt={`Brand ${index + 1}`} className="brand-logo" />
+            <Image key={index} src={brand} alt={`Brand ${index + 1}`} className="brand-logo" />
           ))}
         </div>
       </div>
