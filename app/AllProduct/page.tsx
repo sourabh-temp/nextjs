@@ -266,7 +266,7 @@ const AllProduct = () => {
 	            <div className="all-product-card" key={product.id}>
 	              <Link href={`/ProductView/${product.id}`}>
                   <div className="all-product-image-wrapper">
-  	                <Image src={image} alt={title} width={300} height={200} layout="responsive" className="all-product-image" />
+  	                <Image src={image} alt={title} width={300} height={200} className="all-product-image" />
   	                <div className={`stock-status-badge ${inStock ? 'in-stock' : 'out-of-stock'}`}>
   	                  {inStock ? 'In Stock' : 'Out of Stock'}
   	                </div>

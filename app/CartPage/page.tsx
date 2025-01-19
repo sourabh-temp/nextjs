@@ -49,7 +49,7 @@ const Page = () => {
               cartItems.map((item) => (
                 <div key={item.id} className="cart-item">
                   <div className="cart-item-image">
-                    <Image src={item.image} width={300} height={200} layout="responsive" alt={item.name} />
+                    <Image src={item.image} width={100} height={50} alt={item.name} />
                   </div>
                   <div className="cart-item-details">
                     <p className="cart-item-name">{item.name}</p>
