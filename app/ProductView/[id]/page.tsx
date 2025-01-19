@@ -58,11 +58,11 @@ const Page = () => {
         <div className="product-view-container">
           <div className="product-images">
             <div className="main-image">
-              <Image src={product.images[0]} width={300} height={200} layout="responsive" alt="Main Product" width={500} height={500} />
+              <Image src={product.images[0]} layout="responsive" alt="Main Product" width={500} height={500} />
             </div>
             <div className="thumbnail-container">
               {product.images.map((image, index) => (
-                <Image src={image} width={300} height={200} layout="responsive" alt={`Product ${index + 1}`} className="thumbnail" key={index} width={100} height={100} />
+                <Image src={image} layout="responsive" alt={`Product ${index + 1}`} className="thumbnail" key={index} width={100} height={100} />
               ))}
             </div>
           </div>
