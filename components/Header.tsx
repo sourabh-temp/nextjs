@@ -3,7 +3,7 @@ import React from 'react';
 import { FaShoppingCart, FaUserCircle } from 'react-icons/fa';
 import Link from 'next/link';
 import '@/styles/Header.css';
-import Subheader from '@/components/Subheader.tsx'
+import Subheader from '@/components/Subheader'
 import Image from 'next/image';
 
 const Header = () => {

@@ -5,7 +5,7 @@ import '@/styles/Login.css';
 const Login = () => {
   const [email, setEmail] = useState('');
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log('Submitted email:', email);
   };
