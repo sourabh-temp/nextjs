@@ -26,9 +26,9 @@ const Page = () => {
   const product = {
     title: 'Protein',
     images: [
-      '/logo.webp',
-      '/logo.webp',
-      '/logo.webp'
+      '/protien.webp',
+      '/protien.webp',
+      '/protien.webp'
     ],
     description: 'AS-IT-IS ATOM Whey Protein - 1 kg, 27GM Protein',
     category: 'ASITIS NUTRITION',
@@ -62,7 +62,7 @@ const Page = () => {
             </div>
             <div className="thumbnail-container">
               {product.images.map((image, index) => (
-                <Image src={image} layout="responsive" alt={`Product ${index + 1}`} className="thumbnail" key={index} width={100} height={100} />
+                <Image src={image}  alt={`Product ${index + 1}`} className="thumbnail" key={index} width={100} height={100} />
               ))}
             </div>
           </div>

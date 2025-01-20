@@ -8,13 +8,10 @@ import Orders from '@/components/admin/Order';
 import '@/styles/admin/Dashboard.css';
 
 function AdminDashboard() {
-  // State to track which component is active
   const [activeComponent, setActiveComponent] = useState('');
 
-  // Function to render the selected component
   const renderComponent = () => {
     if (!activeComponent) {
-      // If no component is selected, show the welcome message
       return (
         <div className="welcome-message">
           <h2>Welcome to the Admin Dashboard</h2>

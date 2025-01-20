@@ -9,7 +9,7 @@ const ProductCard = () => {
   const products = [
     {
       id: 1,
-      image: '/logo.webp',
+      image: '/protien.webp',
       title: 'Protein',
       description: 'AS-IT-IS ATOM Whey Protein - 1 kg, 27GM Protein',
       category: 'ASITIS NUTRITION',
@@ -19,7 +19,7 @@ const ProductCard = () => {
     },
     {
       id: 2,
-      image: '/logo.webp',
+      image: '/gainer.jpeg',
       title: 'Gainer',
       description: 'Portable bluetooth speaker with 10 hours of battery life.',
       category: 'Electronics',
@@ -29,7 +29,7 @@ const ProductCard = () => {
     },
     {
       id: 3,
-      image: '/logo.webp',
+      image: '/cratine.jpg',
       title: 'Creatine',
       description: 'Fitness tracker with heart rate monitor and GPS.',
       category: 'Wearables',
@@ -39,7 +39,7 @@ const ProductCard = () => {
     },
     {
       id: 4,
-      image: '/logo.webp',
+      image: '/multivitamin.jpg',
       title: 'Multivitamin',
       description: 'Ergonomic mouse designed for gaming with customizable DPI.',
       category: 'Accessories',
@@ -49,7 +49,7 @@ const ProductCard = () => {
     },
     {
       id: 5,
-      image: '/logo.webp',
+      image: '/preworkout.png',
       title: 'PreWorkout',
       description: 'Adjustable laptop stand for better posture and ventilation.',
       category: 'Accessories',
@@ -59,7 +59,7 @@ const ProductCard = () => {
     },
     {
       id: 6,
-      image: '/logo.webp',
+      image: '/aminoacid.webp',
       title: 'AminoAcid',
       description: 'Compact wireless keyboard with a long battery life.',
       category: 'Accessories',
@@ -103,11 +103,6 @@ const ProductCard = () => {
           </div>
         );
       })}
-      <div className="view-all-container">
-        <Link href="/products" passHref>
-          <button className="view-all-button">View All Products</button>
-        </Link>
-      </div>
     </div>
   );
 };

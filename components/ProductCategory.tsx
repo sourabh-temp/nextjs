@@ -4,16 +4,16 @@ import '@/styles/ProductCategory.css';
 import Image from 'next/image';
 
 const categories = [
-  { id: 1, name: 'Protein', image: '/logo.webp' },
-  { id: 2, name: 'Gainer', image: '/logo.webp' },
-  { id: 5, name: 'Creatine', image: '/logo.webp' },
-  { id: 6, name: 'Multivitamin', image: '/logo.webp' },
-  { id: 7, name: 'PreWorkout', image: '/logo.webp' },
-  { id: 8, name: 'AminoAcid', image: '/logo.webp' },
-  { id: 9, name: 'Fat Loss', image: '/logo.webp' },
+  { id: 1, name: 'Protein', image: '/protien.webp' },
+  { id: 2, name: 'Gainer', image: '/gainer.jpeg' },
+  { id: 5, name: 'Creatine', image: '/cratine.jpg' },
+  { id: 6, name: 'Multivitamin', image: '/multivitamin.jpg' },
+  { id: 7, name: 'PreWorkout', image: '/preworkout.png' },
+  { id: 8, name: 'AminoAcid', image: '/aminoacid.webp' },
+  { id: 9, name: 'Fat Loss', image: '/fatloss.webp' },
   { id: 10, name: 'Wellness', image: '/logo.webp' },
-  { id: 11, name: 'Protein Food', image: '/logo.webp' },
-  { id: 12, name: 'Accessories', image: '/logo.webp' },
+  { id: 11, name: 'Protein Food', image: '/protinefood.webp' },
+  { id: 12, name: 'Accessories', image: '/bottle.webp' },
 ];
 
 const ProductCategory = () => {

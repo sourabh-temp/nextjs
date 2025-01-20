@@ -14,9 +14,10 @@ const Header = () => {
       <header className="header">
         <div className="header-logo">
           <Image
-            src=""
+            src="/logogss.jpg"
             alt="HSF Nutrition Logo"
-            
+            width={150} 
+            height={150}
             className="logo-image"
           />
         </div>

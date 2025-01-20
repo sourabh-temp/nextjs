@@ -20,7 +20,7 @@ const AllProduct = () => {
   const products = [
     {
       id: 1,
-      image: '/logo.webp',
+      image: '/protien.webp',
       title: 'Protein',
       description: 'AS-IT-IS ATOM Whey Protein - 1 kg, 27GM Protein',
       category: 'ASITIS NUTRITION',
@@ -30,7 +30,7 @@ const AllProduct = () => {
     },
     {
       id: 2,
-      image: '/logo.webp',
+      image: '/gainer.jpeg',
       title: 'Gainer',
       description: 'Portable bluetooth speaker with 10 hours of battery life.',
       category: 'Electronics',
@@ -40,7 +40,7 @@ const AllProduct = () => {
     },
     {
       id: 3,
-      image: '/logo.webp',
+      image: '/cratine.jpg',
       title: 'Creatine',
       description: 'Fitness tracker with heart rate monitor and GPS.',
       category: 'Wearables',
@@ -50,7 +50,7 @@ const AllProduct = () => {
     },
     {
       id: 4,
-      image: '/logo.webp',
+      image: '/multivitamin.jpg',
       title: 'Multivitamin',
       description: 'Ergonomic mouse designed for gaming with customizable DPI.',
       category: 'Accessories',
@@ -60,7 +60,7 @@ const AllProduct = () => {
     },
     {
       id: 5,
-      image: '/logo.webp',
+      image: '/preworkout.png',
       title: 'PreWorkout',
       description: 'Adjustable laptop stand for better posture and ventilation.',
       category: 'Accessories',
@@ -70,7 +70,7 @@ const AllProduct = () => {
     },
     {
       id: 6,
-      image: '/logo.webp',
+      image: '/aminoacid.webp',
       title: 'AminoAcid',
       description: 'Compact wireless keyboard with a long battery life.',
       category: 'Accessories',
@@ -80,7 +80,7 @@ const AllProduct = () => {
     },
     {
       id: 7,
-      image: '/logo.webp',
+      image: '/protien.webp',
       title: 'Protein',
       description: 'AS-IT-IS ATOM Whey Protein - 1 kg, 27GM Protein',
       category: 'ASITIS NUTRITION',
@@ -90,7 +90,7 @@ const AllProduct = () => {
     },
     {
       id: 8,
-      image: '/logo.webp',
+      image: '/gainer.jpeg',
       title: 'Gainer',
       description: 'Portable bluetooth speaker with 10 hours of battery life.',
       category: 'Electronics',
@@ -100,7 +100,7 @@ const AllProduct = () => {
     },
     {
       id: 9,
-      image: '/logo.webp',
+      image: '/cratine.jpg',
       title: 'Creatine',
       description: 'Fitness tracker with heart rate monitor and GPS.',
       category: 'Wearables',
@@ -110,7 +110,7 @@ const AllProduct = () => {
     },
     {
       id: 10,
-      image: '/logo.webp',
+      image: '/multivitamin.jpg',
       title: 'Multivitamin',
       description: 'Ergonomic mouse designed for gaming with customizable DPI.',
       category: 'Accessories',
@@ -120,7 +120,7 @@ const AllProduct = () => {
     },
     {
       id: 11,
-      image: '/logo.webp',
+      image: '/preworkout.png',
       title: 'PreWorkout',
       description: 'Adjustable laptop stand for better posture and ventilation.',
       category: 'Accessories',
@@ -130,7 +130,7 @@ const AllProduct = () => {
     },
     {
       id: 12,
-      image: '/logo.webp',
+      image: '/aminoacid.webp',
       title: 'AminoAcid',
       description: 'Compact wireless keyboard with a long battery life.',
       category: 'Accessories',
@@ -140,7 +140,7 @@ const AllProduct = () => {
     },
     {
       id: 13,
-      image: '/logo.webp',
+      image: '/protien.webp',
       title: 'Protein',
       description: 'AS-IT-IS ATOM Whey Protein - 1 kg, 27GM Protein',
       category: 'ASITIS NUTRITION',
@@ -150,7 +150,7 @@ const AllProduct = () => {
     },
     {
       id: 14,
-      image: '/logo.webp',
+      image: '/gainer.jpeg',
       title: 'Gainer',
       description: 'Portable bluetooth speaker with 10 hours of battery life.',
       category: 'Electronics',
@@ -160,7 +160,7 @@ const AllProduct = () => {
     },
     {
       id: 15,
-      image: '/logo.webp',
+      image: '/cratine.jpg',
       title: 'Creatine',
       description: 'Fitness tracker with heart rate monitor and GPS.',
       category: 'Wearables',
@@ -170,7 +170,7 @@ const AllProduct = () => {
     },
     {
       id: 16,
-      image: '/logo.webp',
+      image: '/multivitamin.jpg',
       title: 'Multivitamin',
       description: 'Ergonomic mouse designed for gaming with customizable DPI.',
       category: 'Accessories',
@@ -180,7 +180,7 @@ const AllProduct = () => {
     },
     {
       id: 17,
-      image: '/logo.webp',
+      image: '/preworkout.png',
       title: 'PreWorkout',
       description: 'Adjustable laptop stand for better posture and ventilation.',
       category: 'Accessories',
@@ -190,7 +190,7 @@ const AllProduct = () => {
     },
     {
       id: 18,
-      image: '/logo.webp',
+      image: '/aminoacid.webp',
       title: 'AminoAcid',
       description: 'Compact wireless keyboard with a long battery life.',
       category: 'Accessories',

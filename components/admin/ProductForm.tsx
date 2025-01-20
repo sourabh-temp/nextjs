@@ -1,6 +1,6 @@
 "use client"
 import React, { useState } from 'react';
-import { ProductType } from '@/types/Product'; // Import ProductType
+import { ProductType } from '@/types/Product';
 import '@/styles/admin/ProductForm.css';
 
 interface ProductFormProps {
@@ -10,10 +10,9 @@ interface ProductFormProps {
 }
 
 function ProductForm({ onSubmit, onClose, editingProduct }: ProductFormProps) {
-  // Set the initial state with proper type, ensuring id is included
   const [product, setProduct] = useState<ProductType>(
     editingProduct || {
-      id: 0, // Default id
+      id: 0,
       name: '',
       price: 0,
       stock: 'in-stock',
@@ -27,7 +26,6 @@ function ProductForm({ onSubmit, onClose, editingProduct }: ProductFormProps) {
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
     const { name, value, type } = e.target;
 
-    // Check if the element is an HTMLInputElement and if it's a checkbox
     const newValue = type === 'checkbox' ? (e.target as HTMLInputElement).checked : value;
 
     setProduct({
@@ -38,7 +36,7 @@ function ProductForm({ onSubmit, onClose, editingProduct }: ProductFormProps) {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    onSubmit(product); // Call onSubmit with the product state
+    onSubmit(product);
   };
 
   return (

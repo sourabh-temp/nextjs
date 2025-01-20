@@ -1,11 +1,10 @@
 "use client"
 import React, { useState } from 'react';
 import '@/styles/admin/Sidebar.css';
-import { FaUser, FaBox, FaList } from 'react-icons/fa'; // Icons from react-icons
+import { FaUser, FaBox, FaList } from 'react-icons/fa';
 
-// Define the props type
 interface SidebarProps {
-  setActiveComponent: (component: string) => void; // Function type to set active component
+  setActiveComponent: (component: string) => void;
 }
 
 function Sidebar({ setActiveComponent }: SidebarProps) {

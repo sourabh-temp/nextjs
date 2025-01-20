@@ -1,6 +1,6 @@
 "use client"
 import React from 'react';
-import '@/styles/Subheader.css'; // Import the CSS for styling
+import '@/styles/Subheader.css';
 
 const Subheader = () => {
   return (

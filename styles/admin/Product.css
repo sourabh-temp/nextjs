@@ -66,10 +66,6 @@ h2 {
   color: white;
 }
 
-.product-table td {
-  background-color: #fff;
-}
-
 .product-table tr:hover {
   background-color: #ecf0f1;
 }

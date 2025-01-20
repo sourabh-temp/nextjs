@@ -1,11 +1,10 @@
 "use client"
 import React, { useState } from 'react';
-import { UserType } from '@/types/User'; // Define the type for a user
+import { UserType } from '@/types/User';
 import UserForm from '@/components/admin/UserForm';
 import '@/styles/admin/User.css';
 
 function Users() {
-  // Define the state with proper types
   const [users, setUsers] = useState<UserType[]>([
     { id: 1, name: 'John Doe', email: 'john@example.com', phone: '123-456-7890', createdAt: '2023-01-01', password: '1234455'},
     { id: 2, name: 'Jane Smith', email: 'jane@example.com', phone: '987-654-3210', createdAt: '2023-02-10', password: '1234455' },
@@ -14,7 +13,7 @@ function Users() {
   const [searchTerm, setSearchTerm] = useState<string>('');
   const [filterBy, setFilterBy] = useState<'name' | 'latest'>('name');
   const [isFormOpen, setIsFormOpen] = useState<boolean>(false);
-  const [editingUser, setEditingUser] = useState<UserType | null>(null); // Editing user type
+  const [editingUser, setEditingUser] = useState<UserType | null>(null);
   const [showPopup, setShowPopup] = useState<boolean>(false);
   const [popupMessage, setPopupMessage] = useState<string>('');
 

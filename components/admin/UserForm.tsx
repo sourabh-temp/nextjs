@@ -25,7 +25,7 @@ function UserForm({ onClose, onSubmit, editingUser }: UserFormProps) {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    onSubmit(formValues); // Pass the form values without the id to onSubmit
+    onSubmit(formValues);
   };
 
   return (
