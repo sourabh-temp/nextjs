@@ -1,12 +1,12 @@
 import React from 'react'
-import Home from '@/app/home/page'
+import Dashboard from '@/components/admin/Dashboard'
 
 const page = () => {
   return (
     <div>
-      <Home />
+      <Dashboard />
     </div>
-    )
-}
+  );
+};
 
 export default page

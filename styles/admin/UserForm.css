@@ -1,0 +1,92 @@
+/* styles/admin/Order.css */
+.content {
+  padding: 20px;
+}
+
+.order-controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.create-order {
+  background-color: #0f918c;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+}
+
+.order-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.order-table th, .order-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+
+.edit-button, .delete-button {
+  padding: 5px 10px;
+  border: none;
+  background-color: #0f918c;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-right: 5px;
+}
+
+.delete-button {
+  background-color: red;
+}
+
+.popup {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: green;
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn-primary {
+  padding: 10px 15px;
+  background-color: #0f918c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+.btn-secondary {
+  padding: 10px 15px;
+  background-color: #ccc;
+  border: none;
+  border-radius: 4px;
+}

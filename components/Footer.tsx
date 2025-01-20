@@ -1,8 +1,8 @@
 "use client";
 import React from 'react';
-import Link from 'next/link';  // Next.js Link component
-import '@/styles/Footer.css'; // Importing the CSS for footer styling
-import { FaFacebookF, FaInstagram } from 'react-icons/fa'; // Importing React icons for social media
+import Link from 'next/link';
+import '@/styles/Footer.css';
+import { FaFacebookF, FaInstagram } from 'react-icons/fa';
 
 const Footer = () => {
   return (
